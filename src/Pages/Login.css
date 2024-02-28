@@ -1,0 +1,74 @@
+.Login{
+    height: 90vh;
+    background-color: #fce3f3;
+}
+.Login .box{
+    margin: auto;
+    width: 550px;
+    background-color: white;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Login .Input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.Login .Input input{
+    width: 100%;
+    height: 65px;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #c9c9c9;
+    color: #c5c5c5;
+    padding: 1px 20px;
+}
+.Login button{
+    width: 94%;
+    height: 62px;
+    margin-bottom: 18px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 19px;
+    padding: 1px 20px;
+    background-color: #ff4141;
+}
+.Login .Input + p{
+    font-size: 17px;
+    color: #5c5c5c;
+}
+.Login .Input + p a{
+    color: #ff4141;
+    cursor: pointer;
+}
+.Login .check{
+    display: flex;
+    gap: 7px;
+    margin-top: -7px;
+    margin-bottom: 25px;
+}
+.Login .check p{
+    padding-top: 10px;
+    color: #5c5c5c;
+}
+@media(max-width:767px){
+    .Login .box{
+        top:60%
+    }
+}
+@media(max-width:596px){
+    .Login .box{
+        width:365px
+    }
+}
+@media(max-width:400px){
+    .Login .box{
+        padding: 20px;
+        width: 300px
+    }
+}

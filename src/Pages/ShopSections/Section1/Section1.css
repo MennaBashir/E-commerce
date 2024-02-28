@@ -1,0 +1,131 @@
+.section1{
+    background: linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    height: 100vh;
+}
+.section1 .container{
+    align-items: center;
+    display: flex;
+}
+.section1 .txt{
+    position: relative;
+    padding-top:180px;
+}
+.section1 .txt p{
+    margin-bottom: -50px;
+    font-size: 24px;
+    color: #090909;
+    font-weight: 500;
+}
+.section1 .txt img{
+    width: 110px;
+    left: 185px;
+    position: relative;
+    bottom: -120px;
+}
+.section1 .txt h2{
+    font-size: 90px;
+    color: #171717;
+}
+.section1 .txt button{
+    border: none;
+    cursor: pointer;
+    background-color: #ff4141;
+    color: white;
+    padding: 15px 52px 15px 25px;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.section1 .txt button + img{
+    width: 20px;
+    position: absolute;
+    left: 165px;
+    bottom: 21px;
+    cursor: pointer;
+}
+.section1 .txt button:hover + img{
+    animation: arrow .4s linear  infinite both;
+}
+@keyframes arrow{
+   from{
+      left: 165px;
+   }
+   to{
+      left: 170px;
+   }
+}
+
+.section1 .imag img:first-child{
+    width: 500px;
+}
+.Shop{
+    overflow:hidden;
+}
+@media(max-width:992px){
+    .section1 .txt img{
+        width: 100px;
+        left: 123px;
+        position: relative;
+        bottom: -100px;
+    }
+    .section1 .txt h2{
+        font-size: 69px;
+    }
+    .section1 .imag img:first-child{
+        width: 400px;
+    }
+}
+@media(max-width:772px){
+    .section1 .imag img:first-child{
+        width: 323px;
+    }
+    .section1 .txt img {
+        width: 83px;
+        left: 94px;
+        bottom: -72px;
+    }
+        .section1 .txt h2 {
+            font-size: 50px;
+        }
+}
+@media(max-width:573px){
+ .section1 .imag{
+        display: none;
+    }
+    .section1 .txt img {
+        width: 85px;
+        left: 156px;
+        bottom: -98px;
+    }
+    .section1 .txt h2 {
+        font-size: 82px;
+    }
+}
+@media(max-width:437px){
+    .section1 .txt img {
+        width: 80px;
+        left: 106px;
+        bottom: -75px;
+    }
+    .section1 .imag{
+        display: none;
+    }
+    .section1 .txt h2{
+        font-size: 55px;
+    }
+    .section1 .txt{
+        padding-left: 20px;
+        padding-top: 100px;
+    }
+    .section1 .txt button + img{
+        left:178px;
+    } 
+    @keyframes arrow{
+        from{
+           left: 178px;
+        }
+        to{
+           left: 184px;
+        }
+     }
+}

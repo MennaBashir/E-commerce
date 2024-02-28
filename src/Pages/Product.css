@@ -1,0 +1,148 @@
+.product{
+    display: flex;
+    gap: 30px;
+}
+.product .imag{
+    display: flex;
+    gap: 12px;
+}
+.product .imag .imagSub{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product .imag .imagSub img{
+    width: 90px;
+    height: 132px;
+    cursor: pointer;
+    background-color:#eee
+}
+.product .imag .imagMain img{
+    height: 558px;
+    width: 400px;
+    cursor: pointer;
+    background-color:#eee
+}
+.product .txt h1{
+    color: #171717eb;
+    margin-bottom: 15px;
+}
+.product .txt .rate{
+    display: flex;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.product .price{
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+.product .price p:first-child{
+    color: #656565e0;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.product .price p:nth-child(2){
+    font-size: 21px;
+    font-weight: 500;
+    color: #c32727;
+}
+.product .desc {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+.product .size p:first-child{
+    font-weight: 500;
+    font-size: 21px;
+    color: #656565;
+}
+.product .size p:last-child{
+    display: flex;
+    gap: 10px;
+}
+.product .size p + p span{
+    border: 1px solid #ebebeb;
+    background-color: #fbfbfb;
+    font-size: 17px;
+    font-weight: 500;
+    width: 50px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+    color: #171717eb;
+}
+.product button{
+    border: none;
+    background-color: #ff4141;
+    color: white;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.product button:hover{
+    background-color: #ff4141ed
+}
+.product button + p,
+.product button + p + p{
+    margin-top: 28px;
+    margin-bottom: -25px;
+    font-size: 19px;
+    color: #656565;
+}
+.product button + p span,
+.product button + p + p span{
+    font-weight: 500;
+    color: #171717;
+    font-size: 18px;
+}
+.info{
+    margin-top: 200px;
+}
+.info2{
+    margin-bottom: 100px;
+}
+.info h2{
+    color: #171717eb;
+}
+.info p{
+    font-size: 15px;
+    border: 1px solid #ebebeb;
+    padding: 22px;
+    color: #555;
+}
+@media(max-width:956px){
+    .product .imag .imagMain img{
+        width:300px;
+    }
+
+}
+@media(max-width:767px){
+    .product{
+        flex-direction: column;
+        padding-left:30px
+    }
+}
+@media(max-width:468px){
+    .product .imag .imagMain img{
+        width: 225px
+    }
+}
+@media(max-width:468px){
+
+.product .imag .imagMain img{
+    width: 190px
+}
+.product .imag .imagSub img{
+    width: 90px;
+    height: 132px;
+}
+}

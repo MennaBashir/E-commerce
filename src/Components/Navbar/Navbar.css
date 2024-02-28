@@ -1,0 +1,88 @@
+nav .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.logo img {
+    width: 60px;
+}
+.logo p{
+    font-size: 40px;
+    font-weight: 500;
+    color: #171717;
+    letter-spacing: -3px;
+}
+nav ul{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: #626262;
+    letter-spacing: -1px;
+    flex-direction: row !important;
+    gap: 20px;
+    margin-top: 15px
+}
+nav ul .active{
+    border-bottom: 2px solid #ff4141;
+    border-radius: 2px;}
+nav .login{
+    display: flex;
+    position: relative;
+}
+.login button{
+    color: #515151;
+    border: 1px solid #7a7a7a;
+    font-size: 17px;
+    margin-right: 20px;
+    border-radius: 16px;
+    padding: 8px 25px;
+}
+.login button:hover{
+    background-color: #f3f3f3;
+    border: 1px solid #7a7a7a;
+}
+.login a:hover{
+    color: #515151
+}
+.login img{
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    cursor: pointer;
+}
+.login span{
+    font-size: 16px;
+    width: 18px;
+    height: 18px;
+    background-color: #ff4141;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: -9px;
+    top: -6px;
+    padding-bottom: 23px;
+    text-align: center;
+}
+@media(max-width:778px){
+    ul{
+        order: 3;
+    }
+    nav .login{
+        order:2
+    }
+}
+@media(max-width:398px){
+    .login button{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .login img{
+        width: 26px;
+        height: 26px;
+    }
+    .login span{
+        width: 15px;
+        font-size: 15px;
+        height: 15px;
+    }
+}
